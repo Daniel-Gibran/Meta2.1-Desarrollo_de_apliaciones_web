@@ -1,18 +1,15 @@
 <template>
   <v-app>
+    <AppHeader />
     <v-main>
-      <HelloWorld />
+      <IndexPage />
     </v-main>
-    <v-btn
-      class="ma-2"
-      icon="mdi-theme-light-dark"
-      location="top right"
-      position="absolute"
-      @click="$vuetify.theme.cycle()"
-    />
+    <AppFooter />
   </v-app>
 </template>
 
 <script lang="ts" setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
+import AppFooter from '@/components/AppFooter.vue'
+import AppHeader from '@/components/AppHeader.vue'
+import IndexPage from '@/pages/index.vue'
 </script>
