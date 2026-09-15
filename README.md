@@ -1,89 +1,49 @@
-# proyecto-vue-vuetify
+# Aplicación Vue y Vuetify
 
-Scaffolded with Vuetify CLI.
+Aplicación sencilla de portafolio que muestra dos fotografías diferentes de la API de Picsum y los datos básicos del estudiante.
 
-## ❗️ Documentation
+## Captura de pantalla
 
-- Primary docs: https://vuetifyjs.com/
-- Getting started guide: https://vuetifyjs.com/en/getting-started/installation/
-- Community support: https://community.vuetifyjs.com/
-- Issue tracker: https://issues.vuetifyjs.com/
+![Aplicación funcionando](docs/captura.png)
 
-## 🧱 Stack
-
-- Framework: Vue 3 + Vite
-- UI Library: Vuetify
-- Language: TypeScript
-- Package manager: pnpm
-
-## 🧭 Start Here
-
-- Main entry: `src/main.ts`
-- Main app component: `src/App.vue`
-- Main styles: `src/styles/`
-- Plugin setup: `src/plugins/`
-
-## 📁 Project Structure
-
-- `src/main.ts` — application entry point
-- `src/App.vue` — root component
-- `src/components/` — reusable Vue components
-- `src/plugins/` — plugin registration and setup
-- `src/styles/` — global styles and theme settings
-- `public/` — static public files
-
-## ✨ Enabled Features
-
-- ESLint
-- Vuetify MCP
-
-## 💿 Install
-
-Use your selected package manager (pnpm) to install dependencies:
+## Instalación y ejecución
 
 ```bash
 pnpm install
+pnpm run dev
 ```
 
-## 🚀 Quick Start
+Para revisar el proyecto:
 
 ```bash
-pnpm install
-pnpm dev
+pnpm run type-check
+pnpm run lint
+pnpm run build
 ```
 
-## 🏗️ Build
+## Tecnologías
 
-```bash
-pnpm build
+- Vue 3 y Composition API.
+- Vuetify 4.
+- Vite y TypeScript.
+- Fetch API y Picsum Photos.
+
+## Componentes
+
+- `AppHeader.vue`: encabezado con logo y título.
+- `AppFooter.vue`: datos del estudiante y fecha actual.
+- `TarjetaConImagen.vue`: tarjeta reutilizable con props.
+- `TablaDatos.vue`: tabla de habilidades.
+- `pages/index.vue`: tarjetas, botón, estados de carga/error y tabla.
+- `services/picsumApi.ts`: petición y selección de dos imágenes distintas.
+
+## Estructura principal
+
+```text
+src/
+├── App.vue
+├── pages/index.vue
+├── components/
+├── services/picsumApi.ts
+└── plugins/vuetify.ts
 ```
-
-## 🧪 Available Scripts
-
-- `pnpm dev`
-- `pnpm build`
-- `pnpm preview`
-- `pnpm build-only`
-- `pnpm type-check`
-- `pnpm lint`
-- `pnpm lint:fix`
-
-## 🤖 Vuetify MCP Server
-
-This project is configured with the Vuetify Model Context Protocol (MCP) server.
-To install and configure the MCP server for your favorite IDE (Cursor, Trae, Windsurf, VS Code, Claude Desktop, etc.) run:
-
-```bash
-pnpm dlx @vuetify/mcp-cli
-```
-
-This will open an interactive setup wizard to help you connect your AI assistant to the Vuetify ecosystem.
-
-## 💪 Support Vuetify Development
-
-This project uses Vuetify - an MIT licensed Open Source project. We are glad to welcome contributors and any support for ongoing development:
-
-- Contribute to Vuetify and ecosystem projects: https://github.com/vuetifyjs
-- Request enterprise support: https://support.vuetifyjs.com/
-- Sponsor on GitHub: https://github.com/sponsors/vuetifyjs
-- Support on Open Collective: https://opencollective.com/vuetify
