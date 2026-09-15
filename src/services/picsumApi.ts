@@ -8,7 +8,7 @@ interface PicsumPhoto {
   author: string
 }
 
-export async function getTwoPhotos(): Promise<Photo[]> {
+export async function getTwoPhotos (): Promise<Photo[]> {
   const response = await fetch('https://picsum.photos/v2/list?page=1&limit=50')
 
   if (!response.ok) {
@@ -23,7 +23,7 @@ export async function getTwoPhotos(): Promise<Photo[]> {
     second = Math.floor(Math.random() * photos.length)
   }
 
-  return [photos[first], photos[second]].map((photo) => ({
+  return [photos[first], photos[second]].map(photo => ({
     author: photo.author,
     imageUrl: `https://picsum.photos/id/${photo.id}/600/400`,
   }))
